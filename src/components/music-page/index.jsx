@@ -15,7 +15,7 @@ export const MusicPage = () => {
 
   const handleClick = () => {
     if (audioRef.current) {
-      audioRef.current.currentTime = 0.43;
+      audioRef.current.currentTime = 82;
       audioRef.current.play();
     }
     hideTip();
