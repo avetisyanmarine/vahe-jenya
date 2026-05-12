@@ -1,8 +1,8 @@
 import { Container, Flexible } from "../../GlobalStyle";
 import { ForthPageBlock } from "./fortg-page-block";
 import { ForthPagePart, ForthPagePartContext } from "./styled";
-import Church from "../../assets/image/church.jpeg";
-import Restaurant from "../../assets/image/restaurant.jpg";
+import Church from "../../assets/image/churchJPG.png";
+import Restaurant from "../../assets/image/restoran.png";
 import HeartLine from "../../assets/image/heartline.png";
 import Photo3 from "../../assets/image/examp2.jpg";
 
