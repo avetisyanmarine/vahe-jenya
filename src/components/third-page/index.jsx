@@ -19,15 +19,15 @@ export const ThirdPage = () => {
           <ThirdPageBlock
             imageSize={80}
             ImageSrc={Church}
-            number={"13:00"}
+            number={"14:30"}
             bigText="ՊՍԱԿԱԴՐՈՒԹՅՈՒՆ"
-            smallText="Սուրբ Հովհաննես եկեղեցի"
+            smallText="Սուրբ Սարգիս եկեղեցի"
           />
           <ThirdPageBlock
             line={true}
             ImageSrc={Kenac}
             imageSize={80}
-            number={"17:30"}
+            number={"17:00"}
             bigText="ՀԱՐՍԱՆՅԱՑ ՀԱՆԴԻՍՈՒԹՅՈՒՆ"
             smallText="Safari Hall"
           />

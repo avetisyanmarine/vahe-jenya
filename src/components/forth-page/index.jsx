@@ -1,7 +1,7 @@
 import { Container, Flexible } from "../../GlobalStyle";
 import { ForthPageBlock } from "./fortg-page-block";
 import { ForthPagePart, ForthPagePartContext } from "./styled";
-import Church from "../../assets/image/church.jpg";
+import Church from "../../assets/image/church.jpeg";
 import Restaurant from "../../assets/image/restaurant.jpg";
 import HeartLine from "../../assets/image/heartline.png";
 import Photo3 from "../../assets/image/examp2.jpg";
@@ -14,19 +14,19 @@ export const ForthPage = () => {
           <ForthPageBlock
             ImageSrc={Church}
             bigText={"Սուրբ Հովհաննես եկեղեցի"}
-            mapSrc={"https://maps.app.goo.gl/RaFzGUvf96Fs1yqm9"}
+            mapSrc={"https://maps.app.goo.gl/6teeTNCMFQV1wkAk9?g_st=ic"}
           />
           <ForthPageBlock
             ImageSrc={Restaurant}
             bigText={"Safari Hall"}
-            mapSrc={"https://maps.app.goo.gl/X9JVv4gQRdZYDaGK8"}
+            mapSrc={"https://maps.app.goo.gl/Xkvp2zaV4jCr4LPw5?g_st=ic"}
           />
         </ForthPagePartContext>
         <div className="relative mt-10">
           <img
             src={Photo3}
             alt="Restaurant"
-            className="w-full rounded-[15px] grayscale contrast-125 brightness-105"
+            className="w-full rounded-[15px] grayscale"
           />
         </div>
       </Container>
@@ -41,6 +41,8 @@ export const ForthPage = () => {
         >
           Ձեզ հետ բերեք ՍԵՐ, ժպիտներ ու անսահման դրական էմոցիաներ. ինչպես նաև
           հարմարավետ կոշիկներ` պարելու համար:
+          <br /><br />
+          Սիրով կսպասենք
           <br />
           
         </Flexible>

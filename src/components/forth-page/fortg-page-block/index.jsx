@@ -4,14 +4,8 @@ export const ForthPageBlock = ({ ImageSrc, bigText, mapSrc }) => {
   return (
     <>
       <ForthPageBlockPart>
-        <h3 data-aos="fade-up">
-          {bigText}
-        </h3>
-        <img
-          loading="lazy"
-          src={ImageSrc}
-          className="grayscale contrast-100 brightness-105"
-        />
+        <h3 data-aos="fade-up">{bigText}</h3>
+        <img loading="lazy" src={ImageSrc} />
         <Flexible>
           <svg
             width="24"
