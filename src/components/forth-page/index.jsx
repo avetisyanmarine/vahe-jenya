@@ -26,7 +26,7 @@ export const ForthPage = () => {
           <img
             src={Photo3}
             alt="Restaurant"
-            className="w-full rounded-[15px] grayscale"
+            className="w-full rounded-[15px]"
           />
         </div>
       </Container>
