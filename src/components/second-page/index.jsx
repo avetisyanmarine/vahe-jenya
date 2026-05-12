@@ -121,24 +121,23 @@ export const SecondPage = () => {
         </div>
       </Container>
       <Container>
-        <div className="flex h-[100vh] my-11 gap-[20px]">
-          <div className="flex-shrink-0">
-            {" "}
-            {/* Ավելացրու սա */}
-            <img
-              src={Photo2}
-              className="h-full w-auto object-contain"
-              alt="Save the Date"
-            />
-          </div>
-          <div className="flex flex-col gap-2 flex-grow">
-            {" "}
-            {/* flex-grow, որ մնացած տեղը սա վերցնի */}
-            <img src={PhotoGroup1} alt="" className="h-1/3 object-cover" />
-            <img src={PhotoGroup2} alt="" className="h-1/3 object-cover" />
-            <img src={PhotoGroup3} alt="" className="h-1/3 object-cover" />
-          </div>
-        </div>
+       <div className="flex h-[100vh] my-11 gap-[20px] overflow-hidden">
+  {/* Նկարի կոնտեյները */}
+  <div className="flex-shrink-0 h-full"> 
+    <img 
+      src={Photo2} 
+      className="h-full w-auto object-contain" 
+      alt="Save the Date"
+    />
+  </div>
+
+  {/* Մնացած նկարների կոնտեյները */}
+  <div className="flex flex-col gap-2 flex-grow h-full">
+    <img src={PhotoGroup1} alt="" className="h-1/3 object-cover rounded-lg" />
+    <img src={PhotoGroup2} alt="" className="h-1/3 object-cover rounded-lg" />
+    <img src={PhotoGroup3} alt="" className="h-1/3 object-cover rounded-lg" />
+  </div>
+</div>
         <div className="mt-10 mb-7">
           <h2 className="mb-10">Սիրելի հյուրեր</h2>
           <Flexible className="font-[600]">
@@ -192,7 +191,9 @@ export const SecondPage = () => {
                 src={image.src}
                 alt={image.alt}
                 className={`absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-in-out ${
-                  active ? "opacity-100 scale-100" : "opacity-0 scale-95"
+                  active
+                    ? "opacity-100 scale-100"
+                    : "opacity-0 scale-95"
                 }`}
               />
             );
