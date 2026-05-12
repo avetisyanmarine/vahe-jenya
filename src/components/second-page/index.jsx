@@ -123,7 +123,7 @@ export const SecondPage = () => {
       <Container>
         <div className="flex h-[100vh] my-11 gap-[20px]">
           <div>
-            <img src={Photo2} className="h-[100vh]" />
+            <img src={Photo2} className="h-[100vh] w-auto object-contain" />
           </div>
           <div className="flex flex-col gap-2">
             <img src={PhotoGroup1} alt="" className="h-1/3 object-cover" />
