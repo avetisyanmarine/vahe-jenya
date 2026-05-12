@@ -122,10 +122,18 @@ export const SecondPage = () => {
       </Container>
       <Container>
         <div className="flex h-[100vh] my-11 gap-[20px]">
-          <div>
-            <img src={Photo2} className="h-[100vh] w-auto object-contain" />
+          <div className="flex-shrink-0">
+            {" "}
+            {/* Ավելացրու սա */}
+            <img
+              src={Photo2}
+              className="h-full w-auto object-contain"
+              alt="Save the Date"
+            />
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 flex-grow">
+            {" "}
+            {/* flex-grow, որ մնացած տեղը սա վերցնի */}
             <img src={PhotoGroup1} alt="" className="h-1/3 object-cover" />
             <img src={PhotoGroup2} alt="" className="h-1/3 object-cover" />
             <img src={PhotoGroup3} alt="" className="h-1/3 object-cover" />
@@ -184,9 +192,7 @@ export const SecondPage = () => {
                 src={image.src}
                 alt={image.alt}
                 className={`absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-in-out ${
-                  active
-                    ? "opacity-100 scale-100"
-                    : "opacity-0 scale-95"
+                  active ? "opacity-100 scale-100" : "opacity-0 scale-95"
                 }`}
               />
             );
